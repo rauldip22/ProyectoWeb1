@@ -1,0 +1,13 @@
+﻿@model ProyectoWeb1.Models.Cliente
+@{
+    ViewBag.Title = "Alta";
+}
+
+<h2>Alta</h2>
+
+@using (Html.BeginForm("Guardar","Home"))
+{
+    @Html.ValidationSummary()
+    @Html.EditorForModel()
+    <input type="submit" />
+}
