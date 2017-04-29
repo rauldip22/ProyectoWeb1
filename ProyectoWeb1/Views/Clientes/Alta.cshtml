@@ -1,11 +1,11 @@
-﻿@model ProyectoWeb1.Models.Cliente
+﻿@model ProyectoWeb1.ViewModel.Cliente
 @{
     ViewBag.Title = "Alta";
 }
 
 <h2>Alta</h2>
 
-@using (Html.BeginForm("Guardar","Home"))
+@using (Html.BeginForm("Guardar", "Clientes"))
 {
     @Html.ValidationSummary()
     @Html.EditorForModel()
