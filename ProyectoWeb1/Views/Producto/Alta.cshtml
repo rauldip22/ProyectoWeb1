@@ -1,13 +1,14 @@
-﻿@model ProyectoWeb1.ViewModel.Productos
+﻿@model ProyectoWeb1.ViewModel.Producto
 @{
     ViewBag.Title = "Alta";
 }
-@using (Html.BeginForm("Guardar", "Productos"))
+<h2>Alta Producto</h2>
+@using (Html.BeginForm("Guardar", "Producto"))
 {
     @Html.ValidationSummary()
     @Html.EditorForModel()
     <input type="submit" />
 }
 
-<h2>Alta</h2>
+
 

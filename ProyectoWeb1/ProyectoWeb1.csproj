@@ -169,6 +169,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccesoDatos\RepositorioClientes.cs" />
+    <Compile Include="Models\AccesoDatos\RepositorioProductos.cs" />
     <Compile Include="Models\Cliente.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -221,7 +222,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\Cliente.cs" />
-    <Compile Include="ViewModel\Productos.cs" />
+    <Compile Include="ViewModel\Producto.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -238,6 +239,7 @@
     <Content Include="Views\Clientes\Alta.cshtml" />
     <Content Include="Views\Clientes\Listar.cshtml" />
     <Content Include="Views\Producto\Alta.cshtml" />
+    <Content Include="Views\Producto\Listar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
