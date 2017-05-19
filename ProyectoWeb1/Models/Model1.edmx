@@ -183,7 +183,7 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityContainer Name="ABMDatabaseEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ABMDatabaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Cliente" EntityType="Self.Cliente" />
           <EntitySet Name="Producto" EntityType="Self.Producto" />
           <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
@@ -328,7 +328,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ABMDatabaseModelStoreContainer" CdmEntityContainer="ABMDatabaseEntities1">
+        <EntityContainerMapping StorageEntityContainer="ABMDatabaseModelStoreContainer" CdmEntityContainer="ABMDatabaseEntities">
           <EntitySetMapping Name="Cliente">
             <EntityTypeMapping TypeName="ABMDatabaseModel.Cliente">
               <MappingFragment StoreEntitySet="Cliente">

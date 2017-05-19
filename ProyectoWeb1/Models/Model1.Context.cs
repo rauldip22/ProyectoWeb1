@@ -15,10 +15,10 @@ namespace ProyectoWeb1.Models
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class ABMDatabaseEntities1 : DbContext
+    public partial class ABMDatabaseEntities : DbContext
     {
-        public ABMDatabaseEntities1()
-            : base("name=ABMDatabaseEntities1")
+        public ABMDatabaseEntities()
+            : base("name=ABMDatabaseEntities")
         {
         }
     

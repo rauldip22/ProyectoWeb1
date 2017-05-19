@@ -40,5 +40,15 @@ namespace ProyectoWeb1.Controllers
             var clientes = gestor.Listar();
             return View(clientes.ConvertirAViewModel());
         }
+        public ActionResult Buscar()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Busqueda(string cliente)
+        {
+            var clientes = gestor.Buscar(cliente);
+            return View(clientes.ConvertirAViewModel());
+        }
     }
 }

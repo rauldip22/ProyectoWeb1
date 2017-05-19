@@ -7,7 +7,7 @@ namespace ProyectoWeb1.Models.AccesoDatos
 {
     public class RepositorioProductos
     {
-        ABMDatabaseEntities1 tallerDB = new ABMDatabaseEntities1();
+        ABMDatabaseEntities tallerDB = new ABMDatabaseEntities();
         public void Guardar(Producto producto)
         {
             tallerDB.Producto.Add(producto);

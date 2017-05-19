@@ -18,5 +18,9 @@ namespace ProyectoWeb1.Models
         {
             return repo.Listar();
         }
+        public List<Cliente> Buscar(string cliente)
+        {
+            return repo.Buscar(cliente);
+        }
     }    
 }

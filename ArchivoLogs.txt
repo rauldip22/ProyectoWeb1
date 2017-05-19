@@ -1,0 +1,42 @@
+06/05/2017 12:42:10 - INFO: Opened connection at 06/05/2017 12:42:04 -03:00
+
+06/05/2017 12:42:13 - INFO: Started transaction at 06/05/2017 12:42:11 -03:00
+
+06/05/2017 12:42:16 - INFO: INSERT [dbo].[Cliente]([Apellido], [Nombre])
+VALUES (@0, @1)
+SELECT [IdCliente]
+FROM [dbo].[Cliente]
+WHERE @@ROWCOUNT > 0 AND [IdCliente] = scope_identity()
+06/05/2017 12:42:22 - INFO: 
+
+06/05/2017 12:42:22 - INFO: -- @0: 'ffrf' (Type = AnsiString, Size = 70)
+
+06/05/2017 12:42:22 - INFO: -- @1: 'aededae' (Type = AnsiString, Size = 70)
+
+06/05/2017 12:42:23 - INFO: -- Executing at 06/05/2017 12:42:23 -03:00
+
+06/05/2017 12:42:23 - INFO: -- Completed in 83 ms with result: SqlDataReader
+
+06/05/2017 12:42:23 - INFO: 
+
+06/05/2017 12:42:23 - INFO: Committed transaction at 06/05/2017 12:42:23 -03:00
+
+06/05/2017 12:42:23 - INFO: Closed connection at 06/05/2017 12:42:23 -03:00
+
+06/05/2017 12:42:23 - INFO: Opened connection at 06/05/2017 12:42:23 -03:00
+
+06/05/2017 12:42:23 - INFO: SELECT 
+    [Extent1].[IdCliente] AS [IdCliente], 
+    [Extent1].[Apellido] AS [Apellido], 
+    [Extent1].[Nombre] AS [Nombre]
+    FROM [dbo].[Cliente] AS [Extent1]
+06/05/2017 12:42:23 - INFO: 
+
+06/05/2017 12:42:23 - INFO: -- Executing at 06/05/2017 12:42:23 -03:00
+
+06/05/2017 12:42:23 - INFO: -- Completed in 4 ms with result: SqlDataReader
+
+06/05/2017 12:42:23 - INFO: 
+
+06/05/2017 12:42:23 - INFO: Closed connection at 06/05/2017 12:42:23 -03:00
+

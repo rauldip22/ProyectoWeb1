@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace ProyectoWeb1.ViewModel
 {
     public class Cliente
     {
-        [Required]
+        /*
+        [HiddenInput(DisplayValue = false)]
+        public int IdClienteView { get; set; }
+       */ [Required]
         public string Apellido { get; set; }
         [Required]
         public string Nombre { get; set; }
